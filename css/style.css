@@ -1,0 +1,130 @@
+body {
+    font-family: "Alegreya Sans SC", 'serif';
+    background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+}
+
+header, .nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links {
+    /* Style the links so that they have the same color even after they have been visited */
+}
+
+
+.card > header {
+    background-color: #288088;
+    border: 2px solid #45ADAD;
+    padding: 20px 0px; 
+    border-radius: 7px 7px 0px 0px;
+}
+
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex; 
+    flex-direction: column;
+    flex-basis: 450px;
+
+}
+
+#image1, #image2, #image3, #image4, #image5 {
+    border: 10px solid #50C7C7;
+    margin: 10px;
+    width: 300px; 
+}
+
+
+.gallery {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#logo {
+    animation-name: animation; 
+    animation-duration: 5s;
+}
+
+@keyframes animation {
+    from {
+        width: 50px; 
+        opacity: 0;
+    }
+    to {
+        width: 425px;
+        opacity: 1; 
+    }
+
+}
+
+
+@media screen and (min-width: 850px) {
+    header, .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pricing {
+        display: flex; 
+        flex-direction: row;
+    }
+
+    .card {
+        flex-basis: 250px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    #logo {
+        animation-name: none;
+    }
+}
+
+@media print {
+    body {
+        background-image: none; 
+        background-color: #f1f1f1;  
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+    .pricing {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+
+    }
+
+    .card {
+        border: 2px solid #45ADDD;
+        flex-basis: 250px;
+    }
+
+    .gallery {
+        display: none; 
+    }
+}
+
