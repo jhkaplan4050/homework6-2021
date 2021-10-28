@@ -137,8 +137,8 @@ a:link {
         flex-basis: 250px;
     }
 
-    .gallery {
-        display: none; 
+    .gallery, #gallery {
+        display:none
     }
 }
 
