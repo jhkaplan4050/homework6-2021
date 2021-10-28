@@ -36,15 +36,13 @@ a:link {
 
 .pricing {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .card{
-    display: flex; 
-    flex-direction: column;
     flex-basis: 450px;
 
 }
@@ -90,7 +88,8 @@ a:link {
 
     body > header {
         position: sticky;
-		top: 0;
+        top: 0;
+        left: 0;
     }
 
     .pricing {
