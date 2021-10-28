@@ -128,8 +128,7 @@ a:link {
     .pricing {
         flex-direction: row;
         flex-wrap: nowrap;
-        align-content: flex-end;
-
+        align-items: flex-end;
     }
 
     .card {
@@ -138,7 +137,7 @@ a:link {
     }
 
     .gallery, #gallery {
-        display:none
+        display:none;
     }
 }
 
